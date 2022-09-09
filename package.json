@@ -1,0 +1,22 @@
+{
+  "name": "markov",
+  "version": "1.0.0",
+  "description": "",
+  "main": "makeText.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gah1289/markov.git"
+  },
+  "author": "Gabby McCarthy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gah1289/markov/issues"
+  },
+  "homepage": "https://github.com/gah1289/markov#readme",
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
+}
