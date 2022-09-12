@@ -43,15 +43,14 @@ class MarkovMachine {
 	makeText(numWords = 100) {
 		let chains = this.makeChains();
 		let keys = Array.from(chains.keys());
-		let key = MarkovMachine.random(keys);
+		let chain = MarkovMachine.random(keys);
 		let text = [];
 
-		while (text.length < numWords && key) {
-			text.push(key);
-			key = MarkovMachine.random(chains.get(key));
+		while (text.length < numWords && chain) {
+			text.push(chain);
+			chain = MarkovMachine.random(chains.get(chain));
 		}
 		let str = text.join(' ');
-		console.log(str);
 		return str;
 	}
 }

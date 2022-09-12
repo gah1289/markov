@@ -37,3 +37,5 @@ type = process.argv[2];
 source = process.argv[3];
 
 generateText(type, source);
+
+module.exports = { generateText };
